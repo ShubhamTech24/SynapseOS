@@ -12,14 +12,14 @@ ________________________________________
 SynapseOS is lightweight and works even on limited hardware.
 Minimum Requirements
 Component	Requirement
-CPU	x86 (32-bit)
-RAM	64 MB
-Storage	100 MB
-Virtualization	VirtualBox or QEMU recommended
-Recommended Setup
-•	Processor: Dual-Core
-•	RAM: 256 MB+
-•	Display: 1024×768
+            CPU	x86 (32-bit)
+            RAM	64 MB
+            Storage	100 MB
+            Virtualization	VirtualBox or QEMU recommended
+            Recommended Setup
+            •	Processor: Dual-Core
+            •	RAM: 256 MB+
+            •	Display: 1024×768
 ________________________________________
 3. Installing SynapseOS
 3.1 Installation in VirtualBox
