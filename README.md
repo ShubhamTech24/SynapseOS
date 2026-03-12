@@ -243,14 +243,6 @@ SynapseOS was built to demonstrate:
 
 ---
 
-# 👨‍💻 Authors
-
-**Group 7**
-
-Developed as part of an academic operating systems project.
-
----
-
 # ⭐ Contribution
 
 Contributions, ideas, and improvements are welcome.
@@ -265,7 +257,7 @@ This project is intended for **educational purposes**.
 
 ---
 
-Author
+# 👨‍💻 Authors
 
 Shubham Vishwakarma
 
