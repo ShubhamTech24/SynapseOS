@@ -1,6 +1,8 @@
 <p align="center">
   <img src="assets/banner.png" alt="SynapseOS Banner"/>
 </p>
+
+---
 # 🧠 SynapseOS
 
 **SynapseOS** is a custom-built operating system developed from scratch using **low-level system programming (C, Assembly, and a custom kernel)**.
