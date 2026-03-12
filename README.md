@@ -1,4 +1,5 @@
 # SynapseOS
+SynapseOS is a custom-built operating system designed from scratch using low-level system programming (C, Assembly, and a custom kernel). It features a modern graphical interface, interactive desktop environment, built-in applications, and early-stage AI capabilities. This manual provides instructions for installation, usage, OS features, system behavior, and troubleshooting.
 ________________________________________
 📘 SynapseOS – User Manual 
 Version 1.0 – Developed by: Group-7
