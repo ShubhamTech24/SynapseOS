@@ -263,4 +263,12 @@ Feel free to **fork the project and submit pull requests**.
 
 This project is intended for **educational purposes**.
 
+---
+
+Author
+
+Shubham Vishwakarma
+
+LinkedIn:
+https://linkedin.com/in/shubham-vishwakarma-358332209
 
