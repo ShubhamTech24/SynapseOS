@@ -1,117 +1,266 @@
-# SynapseOS
-________________________________________
-📘 SynapseOS – User Manual 
-Version 1.0 – Developed by: Group-7
-________________________________________
-1. Introduction
-SynapseOS is a custom-built operating system designed from scratch using low-level system programming (C, Assembly, and a custom kernel).
-It features a modern graphical interface, interactive desktop environment, built-in applications, and early-stage AI capabilities.
-This manual provides instructions for installation, usage, OS features, system behavior, and troubleshooting.
-________________________________________
-2. System Requirements
-SynapseOS is lightweight and works even on limited hardware.
-Minimum Requirements
-Component	Requirement
-            CPU	x86 (32-bit)
-            RAM	64 MB
-            Storage	100 MB
-            Virtualization	VirtualBox or QEMU recommended
-            Recommended Setup
-            •	Processor: Dual-Core
-            •	RAM: 256 MB+
-            •	Display: 1024×768
-________________________________________
-3. Installing SynapseOS
-3.1 Installation in VirtualBox
-1.	Open VirtualBox → Create New VM
-2.	Choose:
-o	Type: Other
-o	Version: Other/Unknown (32-bit)
-3.	Assign at least 256 MB RAM
-4.	Add the SynapseOS .iso
-5.	Start the VM
-3.2 Booting
-On boot:
-•	Bootloader loads
-•	Kernel starts
-•	Graphics mode initializes
-•	Desktop GUI appears
-________________________________________
-4. Desktop Environment
-SynapseOS features a clean, custom-built GUI.
-4.1 Components
-•	Top Taskbar – contains system title “SynapseOS”
-•	Clock – shows real-time
-•	App Launcher Icons – Notepad, AI Shell
-•	Wallpaper – customizable background
-•	Mouse Support – full GUI interaction
-________________________________________
-5. Applications
-5.1 Notepad Application
-A lightweight text editor built into SynapseOS.
-Features
-•	Write and edit text
-•	Supports keyboard input
-•	Supports text selection and caret movements
-•	Save text (internal memory for now)
-•	Close using:
-o	Esc key
-o	Or clicking the close control (if enabled)
-Keyboard Shortcuts
-Shortcut	Action
-Ctrl + S	Save text
-Esc	Close Notepad
-Arrows	Move caret
-Enter	New line
-Backspace	Delete
-________________________________________
-6. Smart Shell (AI Command System)
-SynapseOS supports a Smart Shell that can interpret natural-language typed commands.
-6.1 Example Commands
-User Command	System Action
-“open notepad”	Launches Notepad
-“close notepad”	Closes Notepad
-“show time”	Displays clock
-“clear screen”	Clears shell screen
-“help”	Shows command list
-________________________________________
-7. Planned AI Integration
-(Documentation included for academic submission)
-7.1 AI Assistant Overview
-A built-in AI assistant is planned, with following features:
-Core Features
-•	Voice Recognition (using offline/on-device STT)
-•	Natural-language understanding
-•	System automation:
-o	Opening/closing apps
-o	Writing in Notepad automatically
-o	Controlling OS windows
-•	General Chatbot powered by OpenAI API
-o	Uses your API key (secure storage planned)
-________________________________________
-8. Using AI Assistant (When Implemented)
-Example Voice Commands
-Voice Command	Action
-“Write an email in Notepad”	AI opens Notepad and types text
-“Explain quantum computing”	AI chatbot responds
-“Close all windows”	OS performs action
-________________________________________
-9. File System
-Currently minimal and memory-based.
-Capabilities
-•	In-memory storage for Notepad text
-•	Future support for FAT/EXT filesystem planned
-________________________________________
-10. Troubleshooting
-Issue: Notepad not closing
-Solution: Press ESC key.
-Issue: Screen frozen
-Solution: Restart VM.
-Issue: Smart Shell not responding
-Solution:
-•	Re-open shell
-•	Ensure keyboard focus
-Issue: Build errors
-Refer to kernel logs and ensure GCC cross-compiler installed.
-________________________________________
+# 🧠 SynapseOS
+
+**SynapseOS** is a custom-built operating system developed from scratch using **low-level system programming (C, Assembly, and a custom kernel)**.
+It features a simple graphical desktop environment, built-in applications, and an experimental **AI-driven command system**.
+
+This project demonstrates **core operating system concepts**, including kernel development, bootloading, graphics initialization, input handling, and application management.
+
+---
+
+# 📘 User Manual
+
+**Version:** 1.0
+**Developed by:** Group-7
+
+---
+
+# 🚀 Introduction
+
+SynapseOS is designed as an **educational operating system project** that showcases how modern operating systems work internally.
+
+It includes:
+
+* Custom bootloader
+* Custom kernel
+* Graphical desktop interface
+* Built-in applications
+* Smart Shell with natural-language commands
+* Planned AI integration
+
+The system runs in **virtual environments such as VirtualBox or QEMU**.
+
+---
+
+# 💻 System Requirements
+
+SynapseOS is lightweight and can run on minimal hardware.
+
+## Minimum Requirements
+
+| Component      | Requirement       |
+| -------------- | ----------------- |
+| CPU            | x86 (32-bit)      |
+| RAM            | 64 MB             |
+| Storage        | 100 MB            |
+| Virtualization | VirtualBox / QEMU |
+
+## Recommended Setup
+
+* Processor: Dual-Core
+* RAM: 256 MB or more
+* Display: 1024 × 768 resolution
+
+---
+
+# ⚙️ Installation Guide
+
+## 1. Install Using VirtualBox
+
+1. Open **VirtualBox**
+2. Click **New Virtual Machine**
+3. Configure the VM:
+
+```
+Type: Other
+Version: Other / Unknown (32-bit)
+```
+
+4. Allocate **256 MB RAM**
+5. Attach the **SynapseOS ISO**
+6. Start the virtual machine
+
+---
+
+# 🖥️ Boot Process
+
+When the system boots:
+
+1. Bootloader loads
+2. Kernel initializes
+3. Graphics mode activates
+4. Desktop GUI appears
+
+---
+
+# 🖼️ Desktop Environment
+
+SynapseOS provides a simple graphical desktop environment.
+
+## Components
+
+* **Top Taskbar** – displays system title *SynapseOS*
+* **Clock** – shows current time
+* **Application Icons** – launch built-in apps
+* **Wallpaper** – customizable background
+* **Mouse Support** – GUI interaction
+
+---
+
+# 📦 Built-in Applications
+
+## 📝 Notepad Application
+
+A lightweight text editor included in SynapseOS.
+
+### Features
+
+* Write and edit text
+* Keyboard input support
+* Caret movement
+* Basic text editing
+* Internal memory save (temporary)
+
+### Keyboard Shortcuts
+
+| Shortcut   | Action           |
+| ---------- | ---------------- |
+| Ctrl + S   | Save text        |
+| Esc        | Close Notepad    |
+| Arrow Keys | Move caret       |
+| Enter      | New line         |
+| Backspace  | Delete character |
+
+---
+
+# 🤖 Smart Shell (AI Command System)
+
+SynapseOS includes an experimental **Smart Shell** capable of interpreting **natural-language commands**.
+
+## Example Commands
+
+| Command       | Action               |
+| ------------- | -------------------- |
+| open notepad  | Launch Notepad       |
+| close notepad | Close Notepad        |
+| show time     | Display system clock |
+| clear screen  | Clear shell display  |
+| help          | Show command list    |
+
+---
+
+# 🧠 Planned AI Integration
+
+Future versions of SynapseOS aim to include a built-in **AI Assistant**.
+
+## Planned Features
+
+* Voice recognition (offline speech-to-text)
+* Natural language understanding
+* OS automation
+* AI-powered chatbot
+* Application control via voice
+
+---
+
+# 🎤 AI Assistant (Future Usage)
+
+Example commands:
+
+| Voice Command               | Action                        |
+| --------------------------- | ----------------------------- |
+| "Write an email in Notepad" | Opens Notepad and types email |
+| "Explain quantum computing" | AI chatbot answers            |
+| "Close all windows"         | OS closes applications        |
+
+---
+
+# 📁 File System
+
+Current implementation is **memory-based**.
+
+### Current Capabilities
+
+* In-memory storage for Notepad text
+* Temporary document handling
+
+### Planned Improvements
+
+* FAT filesystem support
+* EXT filesystem support
+* Persistent storage
+
+---
+
+# 🛠️ Troubleshooting
+
+### Notepad not closing
+
+Press:
+
+```
+ESC
+```
+
+---
+
+### Screen frozen
+
+Restart the virtual machine.
+
+---
+
+### Smart Shell not responding
+
+Try:
+
+* Re-opening the shell
+* Ensuring keyboard focus
+
+---
+
+### Build errors
+
+Ensure the following are installed:
+
+* GCC cross-compiler
+* Required build tools
+* Proper kernel configuration
+
+Check **kernel logs** for debugging.
+
+---
+
+# 📌 Project Goals
+
+SynapseOS was built to demonstrate:
+
+* Operating system fundamentals
+* Kernel development
+* Bootloader programming
+* GUI systems in OS
+* System-level programming in **C and Assembly**
+
+---
+
+# 📈 Future Improvements
+
+* Full filesystem implementation
+* Advanced window manager
+* Networking support
+* Package manager
+* AI-powered system assistant
+* Voice-controlled OS commands
+
+---
+
+# 👨‍💻 Authors
+
+**Group 7**
+
+Developed as part of an academic operating systems project.
+
+---
+
+# ⭐ Contribution
+
+Contributions, ideas, and improvements are welcome.
+
+Feel free to **fork the project and submit pull requests**.
+
+---
+
+# 📜 License
+
+This project is intended for **educational purposes**.
+
 
